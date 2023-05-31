@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="/css/style1.css" rel="stylesheet">
+	<title>Display</title>
+</head>
+
+<body>
+
+	<div>
+		<a href="/curso/display.html"><button>Display</button></a>
+		<a href="/curso/flex-direction.html"><button>Flex-direction</button></a>
+		<a href="/curso/flex-wrap.html"><button>Flex-wrap</button></a>
+		<a href="/curso/flex-flow.html"><button>Flex-flow</button></a>
+		<a href="/curso/justify-content.html"><button>Justify-content</button></a>
+		<a href="/curso/align-items.html"><button>Align-items</button></a>
+		<a href="/curso/align-content.html"><button>Align-content</button>
+		<a href="/curso/flex-grow.html"><button>Flex-grow</button></a>
+		<a href="/curso/flex-basis.html"><button>Flex-basis</button></a>
+		<a href="/curso/flex-shrink.html"><button>Flex-shrink</button></a>
+		<a href="/curso/flex.html"><button>Flex</button></a>
+		<a href="/curso/order.html"><button>Order</button></a>
+		<a href="/curso/align-self.html"><button>Align-self</button></a>
+	</div>
+
+	<p>Define o elemento como um flex container, tornando os seus filhos flex-itens.</p>
+<!-- 
+	display: flex;
+// Torna o elemento um flex container automaticamente transformando todos os seus filhos diretos em flex itens. -->
+
+
+	<h1>display: block;</h1>
+	<section class="container">
+		<div class="item">1</div>
+		<div class="item">2</div>
+		<div class="item">3</div>
+		<div class="item">4</div>
+	</section>
+
+	<h1>display: flex;</h1>
+	<section class="container flex">
+		<div class="item">1</div>
+		<div class="item">2</div>
+		<div class="item">3</div>
+		<div class="item">4</div>
+	</section>
+
+	<h1>display: flex;</h1>
+	<section class="container flex">
+		<div class="item">Teste 1</div>
+		<div class="item">Teste 2</div>
+		<div class="item">Teste 3</div>
+		<div class="item">Teste 4</div>
+		<div class="item">Teste 5</div>
+		<div class="item">Teste 6</div>
+		<div class="item">Teste 7</div>
+	</section>
+
+	<h1>display: flex;</h1>
+	<section class="container flex flex-wrap">
+		<div class="item">Teste 1</div>
+		<div class="item">Teste 2</div>
+		<div class="item">Teste 3</div>
+		<div class="item">Teste 4</div>
+		<div class="item">Teste 5</div>
+		<div class="item">Teste 6</div>
+		<div class="item">Teste 7</div>
+	</section>
+
+	<h1>display: flex; // flex-item-1</h1>
+	<section class="container flex">
+		<div class="item flex-item-1">Teste 1</div>
+		<div class="item flex-item-1">Teste 2</div>
+		<div class="item flex-item-1">Teste 3</div>
+	</section>
+
+</body>
+
+</html>

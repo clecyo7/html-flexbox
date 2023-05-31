@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="/css/style3.css" rel="stylesheet">
+	<title>flex-wrap</title>
+</head>
+
+<body>
+
+	<div>
+		<a href="/curso/display.html"><button>Display</button></a>
+		<a href="/curso/flex-direction.html"><button>Flex-direction</button></a>
+		<a href="/curso/flex-wrap.html"><button>Flex-wrap</button></a>
+		<a href="/curso/flex-flow.html"><button>Flex-flow</button></a>
+		<a href="/curso/justify-content.html"><button>Justify-content</button></a>
+		<a href="/curso/align-items.html"><button>Align-items</button></a>
+		<a href="/curso/align-content.html"><button>Align-content</button>
+		<a href="/curso/flex-grow.html"><button>Flex-grow</button></a>
+		<a href="/curso/flex-basis.html"><button>Flex-basis</button></a>
+		<a href="/curso/flex-shrink.html"><button>Flex-shrink</button></a>
+		<a href="/curso/flex.html"><button>Flex</button></a>
+		<a href="/curso/order.html"><button>Order</button></a>
+		<a href="/curso/align-self.html"><button>Align-self</button></a>
+	</div>
+
+	<p>Define se os itens devem quebrar ou não a linha. Por padrão eles não quebram linha, 
+	isso faz com que os flex itens sejam compactados além do limite do conteúdo.
+    Essa é geralmente uma propriedade que é quase sempre definida como flex-wrap: wrap; 
+	Pois assim quando um dos flex itens atinge o limite do conteúdo,
+	o último item passa para a coluna debaixo e assim por diante.</p>
+
+	<!-- flex-wrap: nowrap;
+	// Valor padrão, não permite a quebra de linha.
+
+	flex-wrap: wrap;
+	// Quebra a linha assim que um dos flex itens não puder mais ser compactado.
+
+	flex-wrap: wrap-reverse;
+	// Quebra a linha assim que um dos flex itens não puder mais ser compactado. A quebra é na direção contrária, ou seja para a linha acima. -->
+
+	<h1>flex-wrap: nowrap;</h1>
+	<section class="container nowrap">
+		<!-- O nome grudado foi necessário pois eu preciso definir um conteúdo que não possa ser quebrado. Como uma palavra ou uma imagem. Se fosse uma frase, ele quebraria as linhas da frase antes de ultrapassar o container.	 -->
+		<div class="item">TesteDoItem1</div>
+		<div class="item">TesteDoItem2</div>
+		<div class="item">TesteDoItem3</div>
+	</section>
+
+	<h1>flex-wrap: wrap;</h1>
+	<section class="container wrap">
+		<div class="item">TesteDoItem1</div>
+		<div class="item">TesteDoItem2</div>
+		<div class="item">TesteDoItem3</div>
+	</section>
+
+	<h1>flex-wrap: wrap-reverse;</h1>
+	<section class="container wrap-reverse">
+		<div class="item">TesteDoItem1</div>
+		<div class="item">TesteDoItem2</div>
+		<div class="item">TesteDoItem3</div>
+	</section>
+</body>
+
+</html>

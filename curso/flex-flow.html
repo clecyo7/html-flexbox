@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="/css/style4.css" rel="stylesheet">
+	<title>flex-flow</title>
+</head>
+
+<body>
+	<div>
+		<a href="/curso/display.html"><button>Display</button></a>
+		<a href="/curso/flex-direction.html"><button>Flex-direction</button></a>
+		<a href="/curso/flex-wrap.html"><button>Flex-wrap</button></a>
+		<a href="/curso/flex-flow.html"><button>Flex-flow</button></a>
+		<a href="/curso/justify-content.html"><button>Justify-content</button></a>
+		<a href="/curso/align-items.html"><button>Align-items</button></a>
+		<a href="/curso/align-content.html"><button>Align-content</button>
+		<a href="/curso/flex-grow.html"><button>Flex-grow</button></a>
+		<a href="/curso/flex-basis.html"><button>Flex-basis</button></a>
+		<a href="/curso/flex-shrink.html"><button>Flex-shrink</button></a>
+		<a href="/curso/flex.html"><button>Flex</button></a>
+		<a href="/curso/order.html"><button>Order</button></a>
+		<a href="/curso/align-self.html"><button>Align-self</button></a>
+	</div>
+
+	<p>O flex-flow é um atalho para as propriedades flex-direction e flex-wrap. 
+	Você não verá muito o seu uso, pois geralmente quando mudamos o flex-direction para column, 
+	mantemos o padrão do flex-wrap que é nowrap.
+    E quando mudamos o flex-wrap para wrap, mantemos o padrão do flex-direction que é row.</p>
+
+	<!-- fflex-flow: row nowrap;
+    // Coloca o conteúdo em linha e não permite a quebra de linha.
+
+	flex-flow: row wrap;
+	// Coloca o conteúdo em linha e permite a quebra de linha.
+
+	flex-flow: column nowrap;
+	// Coloca o conteúdo em coluna e não permite a quebra de linha. -->
+
+
+	<h1>flex-flow: row nowrap;</h1>
+<section class="container row-nowrap">
+	<div class="item">TesteDoItem1</div>
+	<div class="item">TesteDoItem2</div>
+	<div class="item">TesteDoItem3</div>
+</section>
+
+<h1>flex-flow: row wrap;</h1>
+<section class="container row-wrap">
+	<div class="item">TesteDoItem1</div>
+	<div class="item">TesteDoItem2</div>
+	<div class="item">TesteDoItem3</div>
+</section>
+
+<h1>flex-flow: column-nowrap;</h1>
+<section class="container column-nowrap">
+	<div class="item">TesteDoItem1</div>
+	<div class="item">TesteDoItem2</div>
+	<div class="item">TesteDoItem3</div>
+</section>
+</body>
+
+</html>
